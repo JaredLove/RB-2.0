@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- The lang="en" is just the specifie the default language for the page. -->
+<html lang="en">
+    <!-- The head element is where we can prodvide anything else the browser needs to know about the page -->
+    <head>
+        <!-- Meta tags give the browser extra information about the paege and sometimes for display purposes and sometimes for SEO search engine optimization -->
+        <!-- The charset meta tag is important to include beaucse it specifies te range ofcharacters(letters, numbers, symbols, etc.) that can be used -->
+        <meta charset="UTF-8" />
+        <!-- style sheet  -->
+        <!-- rel provides information about the document and the href in the link element tells HTML document to go find a specific resource(file)  -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- For example the title element, so the browser knows what to call this webpage -->
+        <title>Run Buddy</title>
+    </head>
+    <!-- The body element is where all of the content should go. -->
+    <body>
+        <!-- The h1 element is a level 1 heading element, so it makes the text inside it big and bold. If you have less impotant headings on the page you can use h2 , h3, and so on. -->
+        <header>
+            <h1>
+              <!-- best practive by making the branding of the page clickable back to the home page  -->
+              <!-- the value / is used which represent the topmost directory so index.html  -->
+              <a href="./index.html"> RUN BUDDY </a>  
+            </h1>
+            <!-- semantic elements describe the information thats is inside of them  -->
+            <!-- for example nav which aids both accessibility and SEO  -->
+            <!-- accessibilty is the practice of adding HTML elements in a way tha tallows assistive technology such as screen readers to explain to those who have a disability  -->
+            <!-- SEO or search engine optimication is the process of maximizing the number of visits a website receives and how frequently it shows up in search results  -->
+            <nav>
+                <!-- unordered list  -->
+                <ul>
+                    <!-- list item element  -->
+                    <li>
+                        <!-- anchor element  -->
+                        <!-- with a HTML attribute example href these can be used to give a html element a unique identity -->
+                        <a href="#what-we-do">What We Do</a>
+                    </li>
+                    <li>
+                        <a href="#what-you-do">What You Do</a>
+                    </li>
+                    <li>
+                        <a href="#your-trainers">Your Trainers</a>
+                    </li>
+                    <li>
+                        <a href="#reach-out">Reach Out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- hero/jumbotron section -->
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Get Started Today</h3>
+                <p>Fill out this for and one of our trainers will schedule a consult</p>
+
+                <form>
+                    <!-- the for attribute links to the id attribute of input  -->
+                    <label for="name">Enter full name:</label>
+                    <!-- the type attribute relates to the type of input  -->
+                    <!-- the placeholder attribute offers a hint or label within the text field  -->
+                    <!-- the name attribute indenifies the element so the response can be referenced  -->
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                    <label for="number">Enter phone number:</label>
+                    <input type="tel" placeholder="Phone Number" name="number" id="number" class="form-input" />
+                    <p>
+                        Have you worked out with a trainer before?
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>
+                    </p>
+                    <p>
+                        
+                        <label for="checkbox">
+                            I acknowledge that I am at least 18 years of age
+                        </label>
+
+                        <input type="checkbox" name="age-confirm" id="checkbox" /> 
+                    </p>
+                    <button type="submit">
+                        Get running!
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- what we do section  -->
+        <section id="what-we-do" class="intro">
+            <h2 class="section-title primary-border">
+               What We Do 
+            </h2>
+            <p>
+                butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO tumblr normcore banksy dirext trade blue bottle chillwave you probably have
+            </p>
+        </section>
+        <!-- what you do seciton  -->
+        <section id="what-you-do" class="steps">
+            <h2 class="section-title secondary-border">
+                What You Do 
+            </h2>
+           <div>
+                <img src="./assets/images/step-1.svg" alt=""/>
+                <h3>Step 1: Fill Out The Form Above.</h3>
+                <p>You're already here, so why not?</p>
+           </div>
+           <div>
+            <img src="./assets/images/step-2.svg" alt=""/>
+            <h3>Step 2: Consult With One Of Our Trainers.</h3>            <p>Are you here to build muscle, lose weight, or just feel good?</p>           </div>        <div>            <img src="./assets/images/step-3.svg" alt=""/>
+            <h3>Step 3: Get Running.</h3>
+            <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+           </div>
+           <div>
+            <img src="./assets/images/step-4.svg" alt=""/>
+            <h3>Step 4: See Results.</h3>
+            <p>Bi-weekly checkins with your ttainer will keep you focused.</p>
+           </div>
+        </section>
+        <!-- trainers section  -->
+        <section id="your-trainers" class="your-trainers">
+            <h2 class="section-title primary-border">
+              Meet The Trainers  
+            </h2>
+            <article class="trainer">
+                <img src="./assets/images/trainer-1.jpg" alt="arron stephens in his workout clothes, ready to pump iron"/>
+                <div class="trainer-bio text-left">
+                    <h3>Arron Stephons</h3>
+                    <h4>Speed / Strength</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                     typesetting industry. Lorem Ipsum has been the industry's 
+                     standard dummy text ever since the 1500s</p> 
+                </div>
+
+            </article>
+            <article class="trainer">
+                <div class="trainer-bio text-right">
+                    <h3>Joanna Gill</h3>
+                    <h4>Endurance</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s</p> 
+                </div>
+                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
+            </article>
+            <article class="trainer">
+                <img src="./assets/images/trainer-3.jpg" alt="Harry smith wearing a headband and lifting comically small pink weights"/>
+                <div class="trainer-bio text-left">
+                    <h3>Harry "The Headband" Smith</h3>
+                    <h4>Strength</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s</p> 
+                </div>
+            </article>
+            
+        </section>
+        <!-- reach out section  -->
+        <section id="reach-out" class="contact">
+            <h2 class="section-title secondary-border">
+               Reach Out 
+            </h2>
+            <div class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6945.2063314254165!2d-98.4779647246015!3d29.49877324421839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf55ce53601ff%3A0x7b2a622574555480!2s555%20E%20Basse%20Rd%2C%20San%20Antonio%2C%20TX%2078209!5e0!3m2!1sen!2sus!4v1716636528881!5m2!1sen!2sus"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>"
+                <div>
+                    <h3>Run Buddy</h3>
+                    <p>Any questions or concerns before signing up?
+                        <br />
+                        Let us know and we'll be happy to talk to you!
+                    </p>
+                    <address>
+                        55 Main Street <br />
+                        Some Town, Ca  <br />
+                        12345 <br />
+                        P: 555.RUN.BUDZ (555.786.2839) <br />
+                        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                    </address>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <!-- footer  -->
+        <footer>
+            
+            <h2>
+                ❤️ Made with love by Run Buddy.    
+            </h2>
+
+            <div>
+                <a href="./privacy-policy.html">Read Our Privacy Policy</a> 
+                <br/>
+                &copy; 2019 Run Buddy, Inc.
+            </div>
+
+        </footer>
+    </body>
+</html>

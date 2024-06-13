@@ -9,7 +9,7 @@ A website that offers fitness training services.
 
 
 ## Website
-https://jaredlove.github.io/RB/
+https://jaredlove.github.io/RB-2.0/
 
 
 ## Contribution
